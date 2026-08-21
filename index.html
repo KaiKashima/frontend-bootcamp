@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>プロフィールカード一覧</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!--
       課題:
       このファイルにプロフィールカード一覧ページのHTMLを実装してください。
@@ -25,9 +27,79 @@
     -->
 
     <!-- ここから実装してください -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Frontend Team Members</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section>
+                <h2 class="section-title">プロフィールカード一覧</h2>
+                <p class="section-description">HTML/CSS基礎モジュール用のサンプルUIです。PCでは3列、スマートフォンでは1列表示になります。</p>
+
+                <div class="card-list">
+                    <article class="profile-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+                            alt="" class="profile-image" />
+                        <div class="card-body">
+                            <p class="card-role">Frontend Engineer</p>
+                            <h3 class="card-name">山田 花子</h3>
+                            <p class="card-text">
+                                UI実装とアクセシビリティ改善を担当。ユーザーにとって使いやすい画面づくりが得意です。
+                            </p>
+                            <a href="#" class="card-button">詳細を見る</a>
+                        </div>
+                    </article>
+
+                    <article class="profile-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+                            alt="" class="profile-image" />
+                        <div class="card-body">
+                            <p class="card-role">UI Designer</p>
+                            <h3 class="card-name">佐藤 健太</h3>
+                            <p class="card-text">
+                                デザインシステムの整備を担当。見た目の美しさと実装しやすさの両立を重視しています。
+                            </p>
+                            <a href="#" class="card-button">詳細を見る</a>
+                        </div>
+                    </article>
+
+                    <article class="profile-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&q=80"
+                            alt="" class="profile-image" />
+                        <div class="card-body">
+                            <p class="card-role">Project Manager</p>
+                            <h3 class="card-name">鈴木 美咲</h3>
+                            <p class="card-text">
+                                開発進行とチーム連携を担当。課題の整理と意思決定を支え、プロジェクトを前に進めます。
+                            </p>
+                            <a href="#" class="card-button">詳細を見る</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-text">
+                @ 2026 Frontend Training. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
 
 
 
-    <!-- ここまで実装してください -->
-  </body>
+
+
+
+
+
+<!-- ここまで実装してください -->
+
+
 </html>
