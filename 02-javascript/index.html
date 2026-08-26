@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript基礎</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">プロフィールカード一覧</h1>
+        <p class="site-description">
+          JavaScript基礎の課題です。検索・絞り込み機能を実装してください。
+        </p>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="search-section" aria-label="検索エリア">
+        <div class="search-controls">
+          <label class="search-label" for="searchInput">キーワード検索</label>
+          <input
+            id="searchInput"
+            class="search-input"
+            type="text"
+            placeholder="名前・肩書きで検索"
+          />
+          <button id="searchButton" class="search-button" type="button">
+            検索する
+          </button>
+        </div>
+      </section>
+
+      <section class="result-section" aria-label="検索結果">
+        <div class="result-header">
+          <p id="resultCount" class="result-count">0件表示</p>
+        </div>
+
+        <p id="emptyMessage" class="empty-message is-hidden">
+          該当データがありません
+        </p>
+
+        <div id="cardList" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="profileCardTemplate">
+      <article class="profile-card">
+        <img class="profile-image" src="" alt="" />
+        <div class="profile-body">
+          <p class="profile-role"></p>
+          <h2 class="profile-name"></h2>
+          <p class="profile-description"></p>
+          <button class="detail-button" type="button">詳細を見る</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
