@@ -27,32 +27,26 @@ a {
    共通クラス
 ========================= */
 
-/*
-  ヒント:
-  - 画面中央寄せ用の .container を作る
-  - 横幅は広がりすぎないようにする
-*/
-
-/* ここに .container を書く */
-
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /* =========================
    ヘッダー
 ========================= */
 
-/*
-  実装したいこと:
-  - 背景色を濃い色にする
-  - 文字色を白にする
-  - 上下に余白を付ける
-*/
-
 .site-header {
-  /* ここに記述 */
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 24px 0;
 }
 
 .site-title {
-  /* ここに記述 */
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
 }
 
 /* =========================
@@ -60,100 +54,117 @@ a {
 ========================= */
 
 .main-content {
-  /* ここに記述 */
+  padding: 40px 0;
 }
 
 .section-title {
-  /* ここに記述 */
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .section-description {
-  /* ここに記述 */
+  color: #4b5563;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 /* =========================
    カード一覧
 ========================= */
 
-/*
-  実装したいこと:
-  - PCでは3列
-  - カード間に余白を付ける
-  - Flexboxを使う
-*/
-
 .card-list {
-  /* ここに記述 */
+  display: flex;
+  gap: 24px;
 }
 
 .profile-card {
-  /* ここに記述 */
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+
 }
 
 .profile-image {
-  /* ここに記述 */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-body {
-  /* ここに記述 */
+  padding: 20px;
 }
 
 .card-role {
-  /* ここに記述 */
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
 }
 
 .card-name {
-  /* ここに記述 */
+  font-size: 20px;
+  margin: 0 0 12px 0;
 }
 
 .card-text {
-  /* ここに記述 */
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0 0 20px 0;
 }
 
 .card-button {
-  /* ここに記述 */
+  display: inline-block;
+  text-align: center;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 .card-button:hover {
-  /* ここに記述 */
+  background-color: #1d4ed8;
 }
-
 /* =========================
    フッター
 ========================= */
 
 .site-footer {
-  /* ここに記述 */
+  background-color: #1f2937;
+  color: #9ca3af;
+  padding: 24px 0;
+  text-align: center;
 }
 
 .footer-text {
-  /* ここに記述 */
+  margin: 0;
+  font-size: 14px;
 }
 
 /* =========================
    レスポンシブ
 ========================= */
 
-/*
-  実装したいこと:
-  - 768px以下でカードを1列にする
-  - 必要に応じて余白や文字サイズも調整する
-*/
-
 @media (max-width: 768px) {
   .main-content {
-    /* ここに記述 */
+    padding: 24px 0;
   }
 
   .section-title {
-    /* ここに記述 */
+    font-size: 22px;
   }
 
   .card-list {
-    /* ここに記述 */
+    flex-direction: column;
   }
 
   .profile-card {
-    /* ここに記述 */
+    width: 100%;
+    margin-bottom: 0;
   }
 }
